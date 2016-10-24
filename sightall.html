@@ -1,0 +1,967 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content=""/>
+<link href="css/basic.css" rel="stylesheet" type="text/css" />
+<link href="css/destination_sightall_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-login.js"></script>
+<script type="text/javascript" src="js/jquery-fntop.js"></script>
+
+</head>
+
+<body>
+<!--------- 顶部导航开始 ------------>
+<div class="top_nav">
+    <div class="nav_con">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo"/>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html" ><em class="nav_home"></em>首页</a> </li>
+                <li><a href="hot_tour.html" >热门</a></li>
+                <li><a href="xinjiang_tour.html" >新疆旅游</a></li>
+                <li><a href="jiangwai_tour.html" >疆外旅游</a></li>
+                <li><a href="chujing_tour.html" >出境旅游</a></li>
+                <li><a href="theme.html" >主题旅游</a></li>
+                <li><a href="zhoubian_tour.html" >周边旅游</a></li>
+                <li><a href="travel_notes.html" >攻略游记</a></li>
+                <li><a href="write_travel.html" ><em class="nav_write"></em>写游记</a> </li>
+            </ul>
+            <span class="register"><a href="register.html" target="_blank">注册</a> </span>
+            <span><a href="#" id="log">登录</a> </span>
+        </div>
+        <div id="login" class="re_lo">
+            <div class="re_lo_con">
+                <div class="fL uf">
+                    <form>
+                        <div class="msg">用户登录</div>
+                        <input type="text" placeholder="请输入用户名" class="v1 login_uid" name="uid">
+                        <input type="password" value="" class="v1 login_pwd" name="pwd" placeholder="请输入密码">
+                        <div class="fp clearfix">
+                            <i class="cx">
+                                <input type="checkbox" checked="checked" id="autolg" value="" name="autolg">
+                                <label class="al" for="autolg">下次自动登录</label>
+                            </i>
+                            <span class="rp"><a target="_blank" href="find.html">忘记密码</a></span>
+                        </div>
+                        <div class="sta">
+                            <input type="submit" value="提交"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="fR ut">
+                    <div class="tips"><p>还没有天山网帐号？</p><a class="reg" target="_blank" href="register.html">立即注册</a></div>
+                </div>
+                <span class="close" id="login_close">X</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------- 顶部导航结束 ------------>
+<!--------- 头部位置搜索信息开始 ------------>
+<div class="head">
+    <div class="head_left">
+        <span>当前位置：</span>
+        <a href="content.html" target="_blank">首页</a>&gt<a href="xinjiang_tour.html" target="_blank">目的地</a>
+    </div>
+    <div class="head_center">
+        <span><em class="destination"></em><a href="destination.html">目的地</a></span>
+        <span><em class="sight"></em><a href="sightall.html">景点</a></span>
+    </div>
+    <div class="head_right">
+        <input type="text" class="search_text" placeholder="搜索想要的目的地、攻略、景点、行程天数" />
+        <input type="button" class="search_button"/>
+    </div>
+</div>
+<!--------- 头部位置搜索信息结束 ------------>
+<div class="content">
+    <div class="sight_box">
+        <div class="hot_left_title sight_box_top">
+            <span></span><a href="#">新疆景点</a>
+        </div>
+        <div class="desti">
+            <dl>
+                <dt>景点地点：</dt>
+                <dd>
+                    <a href="#" class="all">全部</a>
+                    <a href="#">喀纳斯</a>
+                    <a href="#">和田</a>
+                    <a href="#">吐鲁番</a>
+                    <a href="#">四川</a>
+                    <a href="#">贵阳</a>
+                    <a href="#">海南</a>
+                    <a href="#">长沙</a>
+                    <a href="#">湖南</a>
+                    <a href="#">西藏</a>
+                    <a href="#">天池</a>
+                    <a href="#">云南</a>
+                    <a href="#">和田</a>
+                    <a href="#">吐鲁番</a>
+                    <a href="#">四川</a>
+                    <a href="#">贵阳</a>
+                    <a href="#">海南</a>
+                    <a href="#">长沙</a>
+                    <a href="#">湖南</a>
+                    <a href="#">西藏</a>
+                    <a href="#">天池</a>
+                    <a href="#">云南</a>
+                </dd>
+                <dd class="open_close" data-status="1">
+                    <em></em><i></i>展开
+                </dd>
+            </dl>
+        </div>
+        <div class="search_sort">
+            <ul>
+                <li><a href="#">综合</a></li>
+                <li><a href="#">价格</a><em></em></li>
+                <li><a href="#">时间</a><em></em></li>
+                <li><a href="#">关注度</a><em></em></li>
+            </ul>
+            <div class="sort_prevnext">
+                <span>1/6</span>
+                <a href="#" class="prev"><em></em>上一页</a>
+                <a href="#" class="next">下一页<em></em></a>
+            </div>
+        </div>
+        <div class="sight_list">
+            <ul>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/1.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                           <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                            </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                        <span class="span_right">
+                            <em class="heart"></em>453
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/2.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                           <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                            </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                        <span class="span_right">
+                            <em class="heart"></em>453
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/3.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                           <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                            </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                        <span class="span_right">
+                            <em class="heart"></em>453
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/4.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                           <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                            </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                        <span class="span_right">
+                            <em class="heart"></em>453
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/4.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                           <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                            </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                        <span class="span_right">
+                            <em class="heart"></em>453
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/1.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                           <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                            </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                        <span class="span_right">
+                            <em class="heart"></em>453
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/2.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                           <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                            </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                        <span class="span_right">
+                            <em class="heart"></em>453
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/3.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                           <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                            </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                        <span class="span_right">
+                            <em class="heart"></em>453
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/3.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                           <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                            </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                        <span class="span_right">
+                            <em class="heart"></em>453
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/4.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                           <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                            </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                        <span class="span_right">
+                            <em class="heart"></em>453
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/4.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                           <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                            </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                        <span class="span_right">
+                            <em class="heart"></em>453
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/1.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                           <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                            </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                        <span class="span_right">
+                            <em class="heart"></em>453
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!---------- 新疆景点结束 -------------->
+    <!---------- 境内景点开始 -------------->
+    <div class="sight_box">
+        <div class="hot_left_title sight_box_top">
+            <span></span><a href="#">境内景点</a>
+        </div>
+        <div class="desti">
+            <dl>
+                <dt>景点地点：</dt>
+                <dd>
+                    <a href="#" class="all">全部</a>
+                    <a href="#">喀纳斯</a>
+                    <a href="#">和田</a>
+                    <a href="#">吐鲁番</a>
+                    <a href="#">四川</a>
+                    <a href="#">贵阳</a>
+                    <a href="#">海南</a>
+                    <a href="#">长沙</a>
+                    <a href="#">湖南</a>
+                    <a href="#">西藏</a>
+                    <a href="#">天池</a>
+                    <a href="#">云南</a>
+                    <a href="#">和田</a>
+                    <a href="#">吐鲁番</a>
+                    <a href="#">四川</a>
+                    <a href="#">贵阳</a>
+                    <a href="#">海南</a>
+                    <a href="#">长沙</a>
+                    <a href="#">湖南</a>
+                    <a href="#">西藏</a>
+                    <a href="#">天池</a>
+                    <a href="#">云南</a>
+                </dd>
+                <dd class="open_close" data-status="1">
+                    <em></em><i></i>展开
+                </dd>
+            </dl>
+        </div>
+        <div class="search_sort">
+            <ul>
+                <li><a href="#">综合</a></li>
+                <li><a href="#">价格</a><em></em></li>
+                <li><a href="#">时间</a><em></em></li>
+                <li><a href="#">关注度</a><em></em></li>
+            </ul>
+            <div class="sort_prevnext">
+                <span>1/6</span>
+                <a href="#" class="prev"><em></em>上一页</a>
+                <a href="#" class="next">下一页<em></em></a>
+            </div>
+        </div>
+        <div class="sight_list">
+            <ul>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/1.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/2.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/3.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/4.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/4.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/1.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/2.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/3.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/3.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/4.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/4.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/1.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!---------- 境内景点结束 -------------->
+    <!---------- 境外景点开始 -------------->
+    <div class="sight_box">
+        <div class="hot_left_title sight_box_top">
+            <span></span><a href="#">境外景点</a>
+        </div>
+        <div class="desti">
+            <dl>
+                <dt>景点地点：</dt>
+                <dd>
+                    <a href="#" class="all">全部</a>
+                    <a href="#">喀纳斯</a>
+                    <a href="#">和田</a>
+                    <a href="#">吐鲁番</a>
+                    <a href="#">四川</a>
+                    <a href="#">贵阳</a>
+                    <a href="#">海南</a>
+                    <a href="#">长沙</a>
+                    <a href="#">湖南</a>
+                    <a href="#">西藏</a>
+                    <a href="#">天池</a>
+                    <a href="#">云南</a>
+                    <a href="#">和田</a>
+                    <a href="#">吐鲁番</a>
+                    <a href="#">四川</a>
+                    <a href="#">贵阳</a>
+                    <a href="#">海南</a>
+                    <a href="#">长沙</a>
+                    <a href="#">湖南</a>
+                    <a href="#">西藏</a>
+                    <a href="#">天池</a>
+                    <a href="#">云南</a>
+                </dd>
+                <dd class="open_close" data-status="1">
+                    <em></em><i></i>展开
+                </dd>
+            </dl>
+        </div>
+        <div class="search_sort">
+            <ul>
+                <li><a href="#">综合</a></li>
+                <li><a href="#">价格</a><em></em></li>
+                <li><a href="#">时间</a><em></em></li>
+                <li><a href="#">关注度</a><em></em></li>
+            </ul>
+            <div class="sort_prevnext">
+                <span>1/3</span>
+                <a href="#" class="prev"><em></em>上一页</a>
+                <a href="#" class="next">下一页<em></em></a>
+            </div>
+        </div>
+        <div class="sight_list">
+            <ul>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/1.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/2.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/3.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/4.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/4.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/1.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/2.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/3.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/3.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/4.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/4.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="li_img caption">
+                        <img src="images/1.jpg" alt=""/>
+                        <a class="li_active" href="sight_tour.html" target="_blank">
+                                       <span>撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                            地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方撒地方了发过来东方锅炉地方，撒地方了发过来东方锅
+                                        </span>
+                        </a>
+                    </div>
+                    <div class="li_title">
+                        <a href="sight_tour.html" target="_blank" class="title">
+                            喀纳斯
+                        </a>
+                                    <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!---------- 境外景点结束 -------------->
+</div>
+
+<div class="footer">
+    <div class="footer_con">
+        <p>
+            <a href="#" target="_blank">关于我们</a> |
+            <a href="#" target="_blank">关于我们</a> |
+            <a href="#" target="_blank">关于我们</a> |
+            <a href="#" target="_blank">关于我们</a> |
+            <a href="#" target="_blank">关于我们</a> |
+            <a href="#" target="_blank">关于我们</a> |
+            <a href="#" target="_blank">关于我们</a>
+        </p>
+        <p>
+            Copy right © 2002-2014 www.tstrip.cn All Rights Reserved
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

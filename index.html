@@ -1,0 +1,1001 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content=""/>
+<link href="css/basic.css" rel="stylesheet" type="text/css" />
+<link href="css/index_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-login.js"></script>
+<script type="text/javascript" src="js/jquery-choose-location.js"></script>
+<script type="text/javascript" src="js/choose-location.js"></script>
+<script type="text/javascript" src="js/jquery-sytop.js"></script>
+
+</head>
+
+<body>
+<!--------- 顶部导航开始 ------------>
+<div class="top_nav">
+    <div class="nav_con">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo"/>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html" ><em class="nav_home"></em>首页</a> </li>
+                <li><a href="hot_tour.html" >热门</a></li>
+                <li><a href="xinjiang_tour.html" >新疆旅游</a></li>
+                <li><a href="jiangwai_tour.html" >疆外旅游</a></li>
+                <li><a href="chujing_tour.html" >出境旅游</a></li>
+                <li><a href="theme.html" >主题旅游</a></li>
+                <li><a href="zhoubian_tour.html" >周边旅游</a></li>
+                <li><a href="travel_notes.html" >攻略游记</a></li>
+                <li><a href="write_travel.html" ><em class="nav_write"></em>写游记</a> </li>
+            </ul>
+            <span class="register"><a href="register.html" target="_blank">注册</a> </span>
+            <span><a href="javascript:;" id="log">登录</a> </span>
+        </div>
+        <div id="login" class="re_lo">
+            <div class="re_lo_con">
+                <div class="fL uf">
+                    <form>
+                        <div class="msg">用户登录</div>
+                        <input type="text" placeholder="请输入用户名" class="v1 login_uid" name="uid">
+                        <input type="password" value="" class="v1 login_pwd" name="pwd" placeholder="请输入密码">
+                        <div class="fp clearfix">
+                            <i class="cx">
+                                <input type="checkbox" checked="checked" id="autolg" value="" name="autolg">
+                                <label class="al" for="autolg">下次自动登录</label>
+                            </i>
+                            <span class="rp"><a target="_blank" href="find.html">忘记密码</a></span>
+                        </div>
+                        <div class="sta">
+                            <input type="submit" value="提交"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="fR ut">
+                    <div class="tips"><p>还没有天山网帐号？</p><a class="reg" target="_blank" href="register.html">立即注册</a></div>
+                </div>
+                <span class="close" id="login_close">X</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------- 顶部导航结束 ------------>
+<!--------- 头部位置搜索信息开始 ------------>
+<div class="head">
+    <div class="head_left">
+        <span>热门搜索：</span>
+        <a href="search.html" target="_blank">天池</a>
+        <a href="search.html" target="_blank">喀纳斯</a>
+        <a href="search.html" target="_blank">吐鲁番</a>
+        <a href="search.html" target="_blank">云南</a>
+        <a href="search.html" target="_blank">海南</a>
+        <a href="search.html" target="_blank">峨眉山</a>
+        <a href="search.html" target="_blank">蜜月</a>
+    </div>
+    <div class="head_center">
+        <span><em class="destination"></em><a href="destination.html">目的地</a></span>
+        <span><em class="sight"></em><a href="sightall.html">景点</a></span>
+    </div>
+    <div class="head_right">
+        <input type="text" class="search_text" placeholder="搜索想要的目的地、攻略、景点、行程天数" />
+        <input type="button" class="search_button"/>
+    </div>
+</div>
+<!--------- 头部位置搜索信息结束 ------------>
+
+<!--------- 幻灯片开始 ------------>
+    <div class="limit-box" id="J-lb">
+        <div class="limit-buy-bd" id="limit-buy">
+            <div class="products">
+                <div class="products_left">
+                    <div class="products_left_top">
+                        <a href="#" target="_blank">
+                            <img src="images/3.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="products_left_bottom">
+                        <div class="products_left_bottom1">
+                            <a href="#" target="_blank">
+                                <img src="images/2.jpg" alt=""/>
+                            </a>
+                        </div>
+                        <div class="products_left_bottom2 mb10">
+                            <a href="#" target="_blank">
+                                <img src="images/1.jpg" alt=/>
+                            </a>
+                        </div>
+                        <div class="products_left_bottom2">
+                            <a href="#" target="_blank">
+                                <img src="images/4.jpg" alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_right">
+                    <div class="products_right_h170 mb10">
+                        <a href="#" target="_blank">
+                            <img src="images/5.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="products_right_w225 mb10 mr10">
+                        <a href="#" target="_blank">
+                            <img src="images/1.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="products_right_w225 mb10">
+                        <a href="#" target="_blank">
+                            <img src="images/4.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="products_right_h170">
+                        <a href="#" target="_blank">
+                            <img src="images/6.jpg" alt=""/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                2222
+            </div>
+            <div class="products">
+                3333
+            </div>
+            <div class="products">
+                4444
+            </div>
+        </div>
+        <div class="limit-buy-nav" id="J-lbn">
+            <span class="number_link"><a href="#" target="_blank">喀纳斯</a>|<a href="#" target="_blank">伊犁</a>|<a href="#" target="_blank">吐鲁番</a></span>
+			<span class="number">
+				<em id="J-lbcp">1</em> / 4
+			</span>
+
+        </div>
+        <a href="javascript:void(0);" class="btn-prev"></a>
+        <a href="javascript:void(0);" class="btn-next"></a>
+    </div>
+<!--------- 幻灯片结束 ------------>
+    <div class="clear"></div>
+<div class="content">
+<!--------- 目的地开始 ------------>
+    <div class="sy_box">
+        <div class="sy_box_title">
+            <span></span>
+            <h2>目的地旅游</h2>
+        </div>
+        <div class="sy_box_con">
+            <div class="newtab newtab1">
+                <ul>
+                    <li class="tcur">境外游</li>
+                    <li class="mlr1">境内游</li>
+                    <li>新疆游</li>
+                </ul>
+            </div>
+            <div class="tabContent tabContent1">
+                <div class="tcb h520 ">
+                    <div class="tcb_left">
+                        <ul>
+                            <li>
+                                <div class="tcb_img" data-transition="scale">
+                                    <a href="address_tour.html" target="_blank">
+                                        <img src="images/1.jpg" alt=""/>
+                                    </a>
+                                    <span>香港</span>
+                                </div>
+                                <div class="tcb_comment">
+                                    <span class="mr20">
+                                        <em class="want"></em><i>想去</i>3453
+                                    </span>
+                                    <span>
+                                        <em class="been"></em><i>去过</i>34534
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tcb_img" data-transition="scale">
+                                    <a href="address_tour.html" target="_blank">
+                                        <img src="images/2.jpg" alt=""/>
+                                    </a>
+                                    <span>香港</span>
+                                </div>
+                                <div class="tcb_comment">
+                                    <span class="mr20">
+                                        <em class="want"></em><i>想去</i>3453
+                                    </span>
+                                    <span>
+                                        <em class="been"></em><i>去过</i>34534
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tcb_img" data-transition="scale">
+                                    <a href="address_tour.html" target="_blank">
+                                        <img src="images/3.jpg" alt=""/>
+                                    </a>
+                                    <span>香港</span>
+                                </div>
+                                <div class="tcb_comment">
+                                    <span class="mr20">
+                                        <em class="want"></em><i>想去</i>3453
+                                    </span>
+                                    <span>
+                                        <em class="been"></em><i>去过</i>34534
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tcb_img" data-transition="scale">
+                                    <a href="address_tour.html" target="_blank">
+                                        <img src="images/4.jpg" alt=""/>
+                                    </a>
+                                    <span>香港</span>
+                                </div>
+                                <div class="tcb_comment">
+                                    <span class="mr20">
+                                        <em class="want"></em><i>想去</i>3453
+                                    </span>
+                                    <span>
+                                        <em class="been"></em><i>去过</i>34534
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tcb_img" data-transition="scale">
+                                    <a href="address_tour.html" target="_blank">
+                                        <img src="images/5.jpg" alt=""/>
+                                    </a>
+                                    <span>澳大利亚</span>
+                                </div>
+                                <div class="tcb_comment">
+                                    <span class="mr20">
+                                        <em class="want"></em><i>想去</i>3453
+                                    </span>
+                                    <span>
+                                        <em class="been"></em><i>去过</i>34534
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tcb_img" data-transition="scale">
+                                    <a href="address_tour.html" target="_blank">
+                                        <img src="images/6.jpg" alt=""/>
+                                    </a>
+                                    <span>啊路上的风景</span>
+                                </div>
+                                <div class="tcb_comment">
+                                    <span class="mr20">
+                                        <em class="want"></em><i>想去</i>3453
+                                    </span>
+                                    <span>
+                                        <em class="been"></em><i>去过</i>34534
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tcb_right">
+                        <ul>
+                            <li class="first">
+                                <span>热门国家</span>
+                                <span>热门城市</span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加11坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tcb h520 tcb_none">
+                    2
+                </div>
+                <div class="tcb h520 tcb_none">
+                    <div class="tcb_left">
+                        <ul>
+                            <li>
+                                <div class="tcb_img" data-transition="scale">
+                                    <a href="sight_tour.html" target="_blank">
+                                        <img src="images/1.jpg" alt=""/>
+                                    </a>
+                                    <span>香港</span>
+                                </div>
+                                <div class="tcb_comment">
+                                    <span class="mr20">
+                                        <em class="want"></em><i>想去</i>3453
+                                    </span>
+                                    <span>
+                                        <em class="been"></em><i>去过</i>34534
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tcb_img" data-transition="scale">
+                                    <a href="sight_tour.html" target="_blank">
+                                        <img src="images/2.jpg" alt=""/>
+                                    </a>
+                                    <span>香港</span>
+                                </div>
+                                <div class="tcb_comment">
+                                    <span class="mr20">
+                                        <em class="want"></em><i>想去</i>3453
+                                    </span>
+                                    <span>
+                                        <em class="been"></em><i>去过</i>34534
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tcb_img" data-transition="scale">
+                                    <a href="sight_tour.html" target="_blank">
+                                        <img src="images/3.jpg" alt=""/>
+                                    </a>
+                                    <span>香港</span>
+                                </div>
+                                <div class="tcb_comment">
+                                    <span class="mr20">
+                                        <em class="want"></em><i>想去</i>3453
+                                    </span>
+                                    <span>
+                                        <em class="been"></em><i>去过</i>34534
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tcb_img" data-transition="scale">
+                                    <a href="sight_tour.html" target="_blank">
+                                        <img src="images/4.jpg" alt=""/>
+                                    </a>
+                                    <span>香港</span>
+                                </div>
+                                <div class="tcb_comment">
+                                    <span class="mr20">
+                                        <em class="want"></em><i>想去</i>3453
+                                    </span>
+                                    <span>
+                                        <em class="been"></em><i>去过</i>34534
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tcb_img" data-transition="scale">
+                                    <a href="sight_tour.html" target="_blank">
+                                        <img src="images/5.jpg" alt=""/>
+                                    </a>
+                                    <span>澳大利亚</span>
+                                </div>
+                                <div class="tcb_comment">
+                                    <span class="mr20">
+                                        <em class="want"></em><i>想去</i>3453
+                                    </span>
+                                    <span>
+                                        <em class="been"></em><i>去过</i>34534
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tcb_img" data-transition="scale">
+                                    <a href="sight_tour.html" target="_blank">
+                                        <img src="images/6.jpg" alt=""/>
+                                    </a>
+                                    <span>啊路上的风景</span>
+                                </div>
+                                <div class="tcb_comment">
+                                    <span class="mr20">
+                                        <em class="want"></em><i>想去</i>3453
+                                    </span>
+                                    <span>
+                                        <em class="been"></em><i>去过</i>34534
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tcb_right">
+                        <ul>
+                            <li class="first">
+                                <span>热门城市</span>
+                                <span>热门景点</span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">乌鲁木齐</a></span>
+                                <span><a href="#" target="_blank">喀纳斯</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">乌鲁木齐</a></span>
+                                <span><a href="#" target="_blank">喀纳斯</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">乌鲁木齐</a></span>
+                                <span><a href="#" target="_blank">喀纳斯</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">乌鲁木齐</a></span>
+                                <span><a href="#" target="_blank">喀纳斯</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">乌鲁木齐</a></span>
+                                <span><a href="#" target="_blank">喀纳斯</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">乌鲁木齐</a></span>
+                                <span><a href="#" target="_blank">喀纳斯</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">乌鲁木齐</a></span>
+                                <span><a href="#" target="_blank">喀纳斯</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">乌鲁木齐</a></span>
+                                <span><a href="#" target="_blank">喀纳斯</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">乌鲁木齐</a></span>
+                                <span><a href="#" target="_blank">喀纳斯</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">乌鲁木齐</a></span>
+                                <span><a href="#" target="_blank">喀纳斯</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">乌鲁木齐</a></span>
+                                <span><a href="#" target="_blank">喀纳斯</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">乌鲁木齐</a></span>
+                                <span><a href="#" target="_blank">喀纳斯</a></span>
+                            </li>
+                            <li>
+                                <span><a href="#" target="_blank">新加11坡</a></span>
+                                <span><a href="#" target="_blank">香港</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------- 目的地结束 ------------>
+<!--------- 推荐线路开始 ------------>
+    <div class="sy_box">
+        <div class="sy_box_title">
+            <span></span>
+            <h2>当季旅游线路推荐</h2>
+            <div class="newtab newtab2">
+                <ul>
+                    <li class="tcur">1月</li>
+                    <li>2月</li>
+                    <li>3月</li>
+                    <li>4月</li>
+                    <li>5月</li>
+                    <li>6月</li>
+                    <li>7月</li>
+                    <li>8月</li>
+                    <li>9月</li>
+                    <li>10月</li>
+                    <li>11月</li>
+                    <li>12月</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sy_box_con">
+            <div class="tabContent tabContent2">
+                <div class="tcb tcb2 h590">
+                   <ul>
+                       <li>
+                           <div class="tcb_img" data-transition="scale">
+                               <a href="#" target="_blank">
+                                   <img src="images/3.jpg" alt=""/>
+                               </a>
+                           </div>
+                           <div class="tcb_comment2">
+                                <div class="tcb_comment2_title">
+                                    <a href="#" target="_blank">喀纳斯4日游价格低低的</a>
+                                </div>
+                               <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="tcb_img" data-transition="scale">
+                               <a href="#" target="_blank">
+                                   <img src="images/6.jpg" alt=""/>
+                               </a>
+                           </div>
+                           <div class="tcb_comment2">
+                               <div class="tcb_comment2_title">
+                                   <a href="#" target="_blank">喀纳斯4日游价格低低的</a>
+                               </div>
+                               <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="tcb_img" data-transition="scale">
+                               <a href="#" target="_blank">
+                                   <img src="images/1.jpg" alt=""/>
+                               </a>
+                           </div>
+                           <div class="tcb_comment2">
+                               <div class="tcb_comment2_title">
+                                   <a href="#" target="_blank">喀纳斯4日游价格低低的</a>
+                               </div>
+                               <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="tcb_img" data-transition="scale">
+                               <a href="#" target="_blank">
+                                   <img src="images/2.jpg" alt=""/>
+                               </a>
+                           </div>
+                           <div class="tcb_comment2">
+                               <div class="tcb_comment2_title">
+                                   <a href="#" target="_blank">喀纳斯4日游价格低低的</a>
+                               </div>
+                               <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="tcb_img" data-transition="scale">
+                               <a href="#" target="_blank">
+                                   <img src="images/3.jpg" alt=""/>
+                               </a>
+                           </div>
+                           <div class="tcb_comment2">
+                               <div class="tcb_comment2_title">
+                                   <a href="#" target="_blank">喀纳斯4日游价格低低的</a>
+                               </div>
+                               <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="tcb_img" data-transition="scale">
+                               <a href="#" target="_blank">
+                                   <img src="images/4.jpg" alt=""/>
+                               </a>
+                           </div>
+                           <div class="tcb_comment2">
+                               <div class="tcb_comment2_title">
+                                   <a href="#" target="_blank">喀纳斯4日游价格低低的</a>
+                               </div>
+                               <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="tcb_img" data-transition="scale">
+                               <a href="#" target="_blank">
+                                   <img src="images/5.jpg" alt=""/>
+                               </a>
+                           </div>
+                           <div class="tcb_comment2">
+                               <div class="tcb_comment2_title">
+                                   <a href="#" target="_blank">喀纳斯4日游价格低低的</a>
+                               </div>
+                               <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                               </div>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="tcb_img" data-transition="scale">
+                               <a href="#" target="_blank">
+                                   <img src="images/6.jpg" alt=""/>
+                               </a>
+                           </div>
+                           <div class="tcb_comment2">
+                               <div class="tcb_comment2_title">
+                                   <a href="#" target="_blank">喀纳斯4日游价格低低的</a>
+                               </div>
+                               <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                               </div>
+                           </div>
+                       </li>
+                   </ul>
+                </div>
+                <div class="tcb tcb_none h590">
+                    2
+                </div>
+                <div class="tcb tcb_none h590">
+                    3
+                </div>
+                <div class="tcb tcb_none h590">
+                    4
+                </div>
+                <div class="tcb tcb_none h590">
+                    5
+                </div>
+                <div class="tcb tcb_none h590">
+                    6
+                </div>
+                <div class="tcb tcb_none h590">
+                    7
+                </div>
+                <div class="tcb tcb_none h590">
+                    8
+                </div>
+                <div class="tcb tcb_none h590">
+                    9
+                </div>
+                <div class="tcb tcb_none h590">
+                    10
+                </div>
+                <div class="tcb tcb_none h590">
+                    11
+                </div>
+                <div class="tcb tcb_none h590">
+                    12
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------- 推荐线路结束 ------------>
+<!--------- 主题线路开始 ------------>
+    <div class="sy_box mb45">
+        <div class="sy_box_title">
+            <span></span>
+            <h2>主题旅游</h2>
+            <div class="newtab newtab3">
+                <ul>
+                    <li class="tcur sy">摄影</li>
+                    <li class="qz">亲子</li>
+                    <li class="my">蜜月</li>
+                    <li class="hw">户外</li>
+                    <li class="zj">自驾</li>
+                    <li class="yl">游轮</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sy_box_con">
+            <div class="tabContent tabContent2">
+                <div class="tcb tcb3 h520">
+                    <ul>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="#" target="_blank">
+                                    <img src="images/1.jpg" alt=""/>
+                                </a>
+                                <span>香港</span>
+                            </div>
+                            <div class="tcb_comment">
+                                        <span class="mr20">
+                                            <em class="want"></em><i>想去</i>3453
+                                        </span>
+                                        <span>
+                                            <em class="been"></em><i>去过</i>34534
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="#" target="_blank">
+                                    <img src="images/2.jpg" alt=""/>
+                                </a>
+                                <span>香港</span>
+                            </div>
+                            <div class="tcb_comment">
+                                        <span class="mr20">
+                                            <em class="want"></em><i>想去</i>3453
+                                        </span>
+                                        <span>
+                                            <em class="been"></em><i>去过</i>34534
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="#" target="_blank">
+                                    <img src="images/3.jpg" alt=""/>
+                                </a>
+                                <span>香港</span>
+                            </div>
+                            <div class="tcb_comment">
+                                        <span class="mr20">
+                                            <em class="want"></em><i>想去</i>3453
+                                        </span>
+                                        <span>
+                                            <em class="been"></em><i>去过</i>34534
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="#" target="_blank">
+                                    <img src="images/4.jpg" alt=""/>
+                                </a>
+                                <span>香港</span>
+                            </div>
+                            <div class="tcb_comment">
+                                        <span class="mr20">
+                                            <em class="want"></em><i>想去</i>3453
+                                        </span>
+                                        <span>
+                                            <em class="been"></em><i>去过</i>34534
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="#" target="_blank">
+                                    <img src="images/5.jpg" alt=""/>
+                                </a>
+                                <span>澳大利亚</span>
+                            </div>
+                            <div class="tcb_comment">
+                                        <span class="mr20">
+                                            <em class="want"></em><i>想去</i>3453
+                                        </span>
+                                        <span>
+                                            <em class="been"></em><i>去过</i>34534
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="#" target="_blank">
+                                    <img src="images/6.jpg" alt=""/>
+                                </a>
+                                <span>啊路上的风景</span>
+                            </div>
+                            <div class="tcb_comment">
+                                        <span class="mr20">
+                                            <em class="want"></em><i>想去</i>3453
+                                        </span>
+                                        <span>
+                                            <em class="been"></em><i>去过</i>34534
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="#" target="_blank">
+                                    <img src="images/1.jpg" alt=""/>
+                                </a>
+                                <span>香港</span>
+                            </div>
+                            <div class="tcb_comment">
+                                        <span class="mr20">
+                                            <em class="want"></em><i>想去</i>3453
+                                        </span>
+                                        <span>
+                                            <em class="been"></em><i>去过</i>34534
+                                        </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="#" target="_blank">
+                                    <img src="images/2.jpg" alt=""/>
+                                </a>
+                                <span>香港</span>
+                            </div>
+                            <div class="tcb_comment">
+                                        <span class="mr20">
+                                            <em class="want"></em><i>想去</i>3453
+                                        </span>
+                                        <span>
+                                            <em class="been"></em><i>去过</i>34534
+                                        </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tcb tcb_none h520">
+                    亲子
+                </div>
+                <div class="tcb tcb_none h520">
+                    蜜月
+                </div>
+                <div class="tcb tcb_none h520">
+                    户外
+                </div>
+                <div class="tcb tcb_none h520">
+                    自驾
+                </div>
+                <div class="tcb tcb_none h520">
+                    游轮
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------- 主题线路结束 ------------>
+    <div class="clear"></div>
+</div>
+<!---
+<div id="mask_bg" class="mask_wrap mask_bg" style="position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 98; opacity: 0.5; background: rgb(0, 0, 0);">
+</div>
+<div id="mask_content_depart" class="pop_box pop_chose_depart">
+    <a href="javascript:;" class="close" id="mask_close">×</a>
+    <div class="headline">
+        尊敬的天山网游客贵宾，请选择本次旅行的出发地：
+    </div>
+    <div class="city_detail">
+        <p class="choose_tips">疆外游客请选择<em>乌鲁木齐</em></p>
+        <ul class="city_list">
+            <li><a href="javascript:;" onclick="changeCity2(1)">乌鲁木齐</a></li>
+            <li><a href="javascript:;" onclick="changeCity2(3)">北京</a></li>
+            <li><a href="javascript:;" onclick="changeCity2(2)">上海</a></li>
+            <li><a href="javascript:;" onclick="changeCity2(28)">成都</a></li>
+            <li><a href="javascript:;" onclick="changeCity2(32)">广州</a></li>
+            <li><a href="javascript:;" onclick="changeCity2(58)">香港</a></li>
+            <li><a href="javascript:;" onclick="changeCity2(617)">台北</a></li>
+        </ul>
+    </div>
+</div>
+---->
+
+<div class="footer">
+    <div class="footer_con">
+        <p>
+            <a href="reservation.html" target="_blank">在线预订</a> |
+            <a href="content.html" target="_blank">内容页</a> |
+            <a href="#" target="_blank">关于我们</a> |
+            <a href="#" target="_blank">关于我们</a> |
+            <a href="#" target="_blank">关于我们</a> |
+            <a href="#" target="_blank">关于我们</a> |
+            <a href="#" target="_blank">关于我们</a>
+        </p>
+        <p>
+            Copy right © 2002-2014 www.tstrip.cn All Rights Reserved
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

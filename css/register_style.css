@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+
+.register_box{
+    overflow: hidden;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+.register_title{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.register_title .reg{
+    float: left;
+}
+.reg_title{
+    margin: 25px 0 15px 0;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    float: left;
+    color: #949494;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 2px solid #949494;
+}
+.public_boxtop {
+    width: 1190px;
+    height: 47px;
+    background: url("../images/content_boxbg.png") no-repeat 0 0;
+}
+.public_boxcenter {
+    width: 1190px;
+    height: auto;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 24px;
+    background: url("../images/content_boxbg_center.png") repeat-y;
+}
+.public_boxbottom {
+    width: 1190px;
+    height: 47px;
+    background: url("../images/content_boxbg.png") no-repeat 0px -47px;
+}
+.register_left{
+    margin-left: 120px;
+    width: 400px;
+    float: left;
+    padding-top: 30px;
+}
+.register_left p{
+    margin-top: 15px;
+}
+.register_left label{
+    width: 100px;
+    display: inline-block;
+    line-height: 32px;
+    font-family: 'Microsoft YaHei';
+    font-size: 16px;
+    text-align: right;
+}
+.register_left input{
+    height: 20px;
+    padding: 5px;
+    line-height: 20px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-family: Tahoma;
+    width: 250px;
+}
+#code{
+    width: 70px;
+}
+#button{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background: #ff6600;
+    color: #fff;
+    padding: 0;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.register_right{
+    width: 510px;
+    margin-right: 120px;
+    height: 303px;
+    float: right;
+    background: url("../images/reg_pic.jpg") no-repeat;
+}
+.register_right h2{
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+.scrollbarbox {
+    float: left;
+    width: 510px;
+}
+.describlayer {
+    float: left;
+    width: 485px;
+    display: iniline;
+    line-height: 22px;
+    font-size: 14px;
+    color: #777;
+    text-align: justify;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: inline;
+}
+.describlayer .describ {
+    width: 485px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.sidebar {
+    float: right;
+    width: 10px;
+    background: #efefef;
+    height: 300px;
+    position: relative;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+.sidebar .bar {
+    position: absolute;
+    width: 10px;
+    height: 300px;
+    left: 0px;
+    background: #dfdfdf;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

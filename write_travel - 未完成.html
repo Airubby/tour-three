@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content=""/>
+    <link href="css/basic.css" rel="stylesheet" type="text/css" />
+    <link href="css/write_travel_style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/yui-min.js"></script>
+    <script type="text/javascript" src="js/jquery-calender.js"></script>
+    <link rel="stylesheet" type="text/css" href="diyUpload/css/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="diyUpload/css/diyUpload.css">
+    <script type="text/javascript" src="diyUpload/js/webuploader.html5only.min.js"></script>
+    <script type="text/javascript" src="diyUpload/js/diyUpload.js"></script>
+</head>
+
+<body>
+
+<!--------- 顶部导航开始 ------------>
+<div class="top_nav">
+    <div class="nav_con">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo"/>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html" ><em class="nav_home"></em>首页</a> </li>
+                <li><a href="content.html" >热门</a></li>
+                <li><a href="xinjiang_tour.html" >新疆旅游</a></li>
+                <li><a href="jiangwai_tour.html" >疆外旅游</a></li>
+                <li><a href="theme.html" >主题旅游</a></li>
+                <li><a href="content.html" >周边旅游</a></li>
+                <li><a href="content.html" >旅游攻略</a></li>
+                <li><a href="content.html" ><em class="nav_write"></em>写游记</a> </li>
+            </ul>
+            <span class="register"><a href="content.html" target="_blank">注册</a> </span>
+            <span><a href="content.html" target="_blank">登录</a> </span>
+        </div>
+    </div>
+</div>
+<!--------- 顶部导航结束 ------------>
+<script type="text/javascript">
+    $(document).ready(function(e) {
+
+    });
+</script>
+<div class="content">
+    <div class="write_top">
+        <div class="write_img">
+            <img src="images/t.jpg" alt=""/>
+        </div>
+        <div class="write_text">
+           <span>xie_xiaoguang</span>，你好！欢迎分享你的旅行生活！
+        </div>
+    </div>
+
+    <div class="write_con">
+        <form id="main_form" method="post">
+            <fieldset class="mb50">
+                <div class="fieldBlock">
+                    <label class="fL"><em class="orange-star">*</em>游记标题 ： </label>
+                    <input type="text" class="gray-input transitionAll" name="noteTitle" id="noteTitleInput" placeholder="给你的游记起个创意的名字" maxlength="40" onkeyup="words_deal();" >
+                    <span class="note_title_all"><em>你还可以输入</em><em id="note_title_all"></em><em>个字</em></span>
+                </div>
+                <div class="fieldBlock" style="z-index:2">
+                    <label class="fL"><em class="orange-star">*</em>出发日期 ： </label>
+                    <input type="text" class="date-input gray-input " autocomplete="on" name="noteFromDate" id="noteFromDate" value=""/>
+                </div>
+                <div class="fieldBlock">
+                    <label class="fL"><em class="orange-star">*</em>人均总花费 ： </label>
+                    <input type="text" class="gray-input transitionAll" name="notePercapita" id="notePercapita" placeholder="输入金额">
+                        <span class="spend-unit">元</span>
+                        <span class="tip">
+                               ◆◆只可输入数字
+                        </span>
+                </div>
+                <div class="fieldBlock" id="tagBlock">
+                    <label class="fL">标签 ： </label>
+                    <div id="tagInputBox" class="fL transitionAll">
+                        <input type="text" class="transitionAll" name="noteTags" id="noteTags" placeholder="填写跟内容相关的词，方便更多人看到你的游记，标签间用“逗号”隔开,最多输入5个标签" autocomplete="off">
+                    </div>
+                </div>
+                <div class="fieldBlock" id="note_textarea">
+                    <label class="fL" ><em class="orange-star">*</em>游记总述 ： </label>
+                    <textarea class="gray-textarea transitionAll" name="noteSummary" id="noteSummary" placeholder="一万个美丽的未来，比不上一个温暖的现在。珍惜身边最美的风景，给自己一次温暖的远行。"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="noteSet">
+                <div class="noteSidebar fL">
+                    <div class="dateBlock">
+                        <div class="addDateBtn transitionAll addPrevDay">
+                            <div class="crossIcon transitionAll">
+                                <em class="crossIconHBar transitionAll"></em>
+                                <em class="crossIconVBar transitionAll"></em>
+                            </div>
+                            新增前一天
+                        </div>
+                        <div class="vLine"></div>
+                        <div class="dayLabel">
+                            <button class="delDateBtn transitionAll"></button>
+                            <span class="dateCountTxt">1</span><br>
+                            <span class="dateTxt">DAY</span><br>
+                            <span class="notedateTxt"></span>
+                        </div>
+                        <div class="vLine"></div>
+                        <div class="addDateBtn transitionAll addNextDay">
+                            <div class="crossIcon transitionAll">
+                                <em class="crossIconHBar transitionAll"></em>
+                                <em class="crossIconVBar transitionAll"></em>
+                            </div>
+                            新增后一天
+                        </div>
+                    </div>
+
+                </div>
+                <div class="noteContent fR">
+                    <h3 class="contentTitleTxt">每一天的记录</h3>
+                    <textarea class="gray-textarea transitionAll contentTitle" id="contentTitle" name="contentTitle" placeholder="游走在别处的我，我眼中的别处。" onkeyup="words_all();" ></textarea>
+                    <span class="contentTitleCount"><em>还可以输入</em><em id="remainingCount"></em>个字</span>
+
+                    <h3 class="destTitleTxt">
+                        <span><em class="orange-star">*</em> 加入游玩目的地</span>
+                        <small id="addInputBox" class="FR"><input type="text" class="transitionAll"/></small>
+                    </h3>
+                    <h3><div class="notis">每张图片大小建议大于1000px，支持png，jpg，gif格式的图片</div>
+                        <div id="upload_img1" class="upload_img"></div>
+                    </h3>
+                    <script type="text/javascript">
+                        $('.upload_img').diyUpload({
+                            url:'server/fileupload.php',
+                            success:function( data ) {
+                                console.info( data );
+                            },
+                            error:function( err ) {
+                                console.info( err );
+                            }
+                        });
+                    </script>
+
+                    <h3 class="contentTitleTxt">添加温馨提示</h3>
+                    <textarea class="gray-textarea transitionAll contentTitle" id="contentTitle1" name="contentTitle" placeholder="给别人一点温馨，也给自己一点温心！" onkeyup="words_all2();" ></textarea>
+                    <span class="contentTitleCount1"><em>还可以输入</em><em id="remainingCount1"></em>个字</span>
+
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+<div class="clear"></div>
+</div>
+
+
+
+
+<div class="footer">
+    <div class="footer_con">
+        <p>
+            <a href="content.html" target="_blank">关于我们</a> |
+            <a href="content.html" target="_blank">关于我们</a> |
+            <a href="content.html" target="_blank">关于我们</a> |
+            <a href="content.html" target="_blank">关于我们</a> |
+            <a href="content.html" target="_blank">关于我们</a> |
+            <a href="content.html" target="_blank">关于我们</a> |
+            <a href="content.html" target="_blank">关于我们</a>
+        </p>
+        <p>
+            Copy right © 2002-2014 www.tstrip.cn All Rights Reserved
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

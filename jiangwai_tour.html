@@ -1,0 +1,721 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content=""/>
+<link href="css/basic.css" rel="stylesheet" type="text/css" />
+<link href="css/jiangwai_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script src='js/jquery.kwicks.min.js' type='text/javascript'></script>
+<script type="text/javascript" src="js/scrollbar.js"></script>
+<script type="text/javascript" src="js/jquery-sytop.js"></script>
+
+</head>
+
+<body>
+<!--------- 顶部导航开始 ------------>
+<div class="top_nav">
+    <div class="nav_con">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo"/>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html" ><em class="nav_home"></em>首页</a> </li>
+                <li><a href="hot_tour.html" >热门</a></li>
+                <li><a href="xinjiang_tour.html" >新疆旅游</a></li>
+                <li><a href="jiangwai_tour.html" >疆外旅游</a></li>
+                <li><a href="chujing_tour.html" >出境旅游</a></li>
+                <li><a href="theme.html" >主题旅游</a></li>
+                <li><a href="zhoubian_tour.html" >周边旅游</a></li>
+                <li><a href="travel_notes.html" >攻略游记</a></li>
+                <li><a href="write_travel.html" ><em class="nav_write"></em>写游记</a> </li>
+            </ul>
+            <span class="register"><a href="register.html" target="_blank">注册</a> </span>
+            <span><a href="login.html" target="_blank">登录</a> </span>
+        </div>
+    </div>
+</div>
+<!--------- 顶部导航结束 ------------>
+<!--------- 头部位置搜索信息开始 ------------>
+<div class="head">
+    <div class="head_left">
+        <span>当前位置：</span>
+        <a href="content.html" target="_blank">首页</a>&gt<a href="xinjiang_tour.html" target="_blank">疆外旅游</a>
+    </div>
+    <div class="head_center">
+        <span><em class="destination"></em><a href="destination.html">目的地</a></span>
+        <span><em class="sight"></em><a href="sightall.html">景点</a></span>
+    </div>
+    <div class="head_right">
+        <input type="text" class="search_text" placeholder="搜索想要的目的地、攻略、景点、行程天数" />
+        <input type="button" class="search_button"/>
+    </div>
+</div>
+<!--------- 头部位置搜索信息结束 ------------>
+<div class="content">
+<!--- 顶部快捷导航开始 ----->
+    <div class="xj_top">
+        <div class="jw_t">
+            <ul class='kwicks kwicks-horizontal'>
+                <li>
+                    <img src="images/1.jpg" alt=""/>
+                    <div class="jw_libg">
+                        <a href="content.html" target="_blank">四川-成都</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/2.jpg" alt=""/>
+                    <div class="jw_libg">
+                        <a href="content.html" target="_blank">贵州-黄果树瀑布</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/3.jpg" alt=""/>
+                    <div class="jw_libg">
+                        <a href="content.html" target="_blank">湖南-张家界</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/4.jpg" alt=""/>
+                    <div class="jw_libg">
+                        <a href="content.html" target="_blank">四川-成都</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/5.jpg" alt=""/>
+                    <div class="jw_libg">
+                        <a href="content.html" target="_blank">西藏-布达拉宫</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="jw_top">
+            <ul>
+                <li class="first">
+                    <a href="content.html" target="_blank">
+                        <img src="images/5.jpg" alt=""/>
+                    </a>
+                    <div class="jw_lg">
+                        <a href="content.html" target="_blank">广西-桂林</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="content.html" target="_blank">
+                        <img src="images/3.jpg" alt=""/>
+                    </a>
+                    <div class="jw_lg">
+                        <a href="content.html" target="_blank">海南-三亚</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="content.html" target="_blank">
+                        <img src="images/2.jpg" alt=""/>
+                    </a>
+                    <div class="jw_lg">
+                        <a href="content.html" target="_blank">云南-昆明</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="content.html" target="_blank">
+                        <img src="images/1.jpg" alt=""/>
+                    </a>
+                    <div class="jw_lg">
+                        <a href="content.html" target="_blank">陕西-西安</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--- 顶部快捷导航结束 ----->
+<!--- 当季推荐线路开始 ----->
+    <div class="sy_box">
+         <div class="sy_box_title">
+            <span></span><h2>当季旅游线路推荐</h2>
+            <div class="newtab newtab2">
+                <ul>
+                    <li class="tcur">1月</li>
+                    <li>2月</li>
+                    <li>3月</li>
+                    <li>4月</li>
+                    <li>5月</li>
+                    <li>6月</li>
+                    <li>7月</li>
+                    <li>8月</li>
+                    <li>9月</li>
+                    <li>10月</li>
+                    <li>11月</li>
+                    <li>12月</li>
+                </ul>
+            </div>
+        </div>
+         <div class="sy_box_con">
+            <div class="tabContent tabContent2">
+                <div class="tcb tcb2 h590">
+                    <ul>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="content.html" target="_blank">
+                                    <img src="images/3.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="tcb_comment2">
+                                <div class="tcb_comment2_title">
+                                    <a href="content.html" target="_blank">喀纳斯4日游价格低低的</a>
+                                </div>
+                                <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="content.html" target="_blank">
+                                    <img src="images/6.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="tcb_comment2">
+                                <div class="tcb_comment2_title">
+                                    <a href="content.html" target="_blank">喀纳斯4日游价格低低的</a>
+                                </div>
+                                <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="content.html" target="_blank">
+                                    <img src="images/1.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="tcb_comment2">
+                                <div class="tcb_comment2_title">
+                                    <a href="content.html" target="_blank">喀纳斯4日游价格低低的</a>
+                                </div>
+                                <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="content.html" target="_blank">
+                                    <img src="images/2.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="tcb_comment2">
+                                <div class="tcb_comment2_title">
+                                    <a href="content.html" target="_blank">喀纳斯4日游价格低低的</a>
+                                </div>
+                                <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="content.html" target="_blank">
+                                    <img src="images/3.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="tcb_comment2">
+                                <div class="tcb_comment2_title">
+                                    <a href="content.html" target="_blank">喀纳斯4日游价格低低的</a>
+                                </div>
+                                <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="content.html" target="_blank">
+                                    <img src="images/4.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="tcb_comment2">
+                                <div class="tcb_comment2_title">
+                                    <a href="content.html" target="_blank">喀纳斯4日游价格低低的</a>
+                                </div>
+                                <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="content.html" target="_blank">
+                                    <img src="images/5.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="tcb_comment2">
+                                <div class="tcb_comment2_title">
+                                    <a href="content.html" target="_blank">喀纳斯4日游价格低低的</a>
+                                </div>
+                                <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tcb_img" data-transition="scale">
+                                <a href="content.html" target="_blank">
+                                    <img src="images/6.jpg" alt=""/>
+                                </a>
+                            </div>
+                            <div class="tcb_comment2">
+                                <div class="tcb_comment2_title">
+                                    <a href="content.html" target="_blank">喀纳斯4日游价格低低的</a>
+                                </div>
+                                <div class="tcb_comment2_other">
+                                    <span class="mr20">
+                                        <em class="day"></em>1天
+                                    </span>
+                                   <span>
+                                        <em class="price"></em>50元
+                                    </span>
+                                   <span class="span_right">
+                                        <em class="heart"></em>453
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tcb tcb_none h590">
+                    2
+                </div>
+                <div class="tcb tcb_none h590">
+                    3
+                </div>
+                <div class="tcb tcb_none h590">
+                    4
+                </div>
+                <div class="tcb tcb_none h590">
+                    5
+                </div>
+                <div class="tcb tcb_none h590">
+                    6
+                </div>
+                <div class="tcb tcb_none h590">
+                    7
+                </div>
+                <div class="tcb tcb_none h590">
+                    8
+                </div>
+                <div class="tcb tcb_none h590">
+                    9
+                </div>
+                <div class="tcb tcb_none h590">
+                    10
+                </div>
+                <div class="tcb tcb_none h590">
+                    11
+                </div>
+                <div class="tcb tcb_none h590">
+                    12
+                </div>
+            </div>
+        </div>
+    </div>
+<!--- 当季推荐线路结束 ----->
+<!--- 旅游线路列表开始 ----->
+    <div class="sy_box sy_box1 mb50">
+        <div class="sy_box_title sy_box_title1">
+            <span></span><h2>线路列表</h2>
+            <div class="xj_tabsort">
+                <div class="xj_tabsort_con">
+                    <div class="xj_tabsort_title">
+                        <div class="xj_tabsort_title_con">线路排序</div>
+                        <em></em>
+                    </div>
+                    <div class="xj_tabsort_list">
+                        <div class="scenery" >
+                            <div class="scrollbarbox scrollbarbox1">
+                                <div class="describlayer describlayer1">
+                                    <div class="describ describ1" >
+                                        <ul>
+                                            <li><a href="content.html">综合</a></li>
+                                            <li><a href="content.html">价格</a></li>
+                                            <li><a href="content.html">时间</a></li>
+                                            <li><a href="content.html">关注度</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sidebar sidebar1">
+                                    <a class="bar bar1"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xj_tabsort_con">
+                    <div class="xj_tabsort_title">
+                        <div class="xj_tabsort_title_con">目 的 地</div>
+                        <em></em>
+                    </div>
+                    <div class="scenery xj_tabsort_list" >
+                        <div class="scrollbarbox scrollbarbox2">
+                            <div class="describlayer describlayer2">
+                                <div class="describ describ2" >
+                                    <ul>
+                                        <li><a href="content.html">不限</a></li>
+                                        <li><a href="content.html">喀纳斯</a></li>
+                                        <li><a href="content.html">敦煌</a></li>
+                                        <li><a href="content.html">天池</a></li>
+                                        <li><a href="content.html">可可托海</a></li>
+                                        <li><a href="content.html">巴音布鲁克</a></li>
+                                        <li><a href="content.html">海南</a></li>
+                                        <li><a href="content.html">吐鲁番</a></li>
+                                        <li><a href="content.html">南疆</a></li>
+                                        <li><a href="content.html">北疆</a></li>
+                                        <li><a href="content.html">四川</a></li>
+                                        <li><a href="content.html">云南</a></li>
+                                        <li><a href="content.html">西藏</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sidebar sidebar2" >
+                                <a class="bar bar2"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xj_tabsort_con">
+                    <div class="xj_tabsort_title">
+                        <div class="xj_tabsort_title_con">线路特色</div>
+                        <em></em>
+                    </div>
+                    <div class="scenery xj_tabsort_list" >
+                        <div class="scrollbarbox scrollbarbox3">
+                            <div class="describlayer describlayer3">
+                                <div class="describ describ3" >
+                                    <ul>
+                                        <li><a href="content.html">不限</a></li>
+                                        <li><a href="content.html">摄影</a></li>
+                                        <li><a href="content.html">亲子</a></li>
+                                        <li><a href="content.html">蜜月</a></li>
+                                        <li><a href="content.html">户外</a></li>
+                                        <li><a href="content.html">自驾</a></li>
+                                        <li><a href="content.html">游轮</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sidebar sidebar3" >
+                                <a class="bar bar3"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xj_tabsort_con">
+                    <div class="xj_tabsort_title">
+                        <div class="xj_tabsort_title_con">行程天数</div>
+                        <em></em>
+                    </div>
+                    <div class="scenery xj_tabsort_list" >
+                        <div class="scrollbarbox scrollbarbox4">
+                            <div class="describlayer describlayer4">
+                                <div class="describ describ4" >
+                                    <ul>
+                                        <li><a href="content.html">不限</a></li>
+                                        <li><a href="content.html">1-2天</a></li>
+                                        <li><a href="content.html">3-4天</a></li>
+                                        <li><a href="content.html">5-6天</a></li>
+                                        <li><a href="content.html">7-8天</a></li>
+                                        <li><a href="content.html">9-10天</a></li>
+                                        <li><a href="content.html">11-15天</a></li>
+                                        <li><a href="content.html">15天以上</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sidebar sidebar4" >
+                                <a class="bar bar4"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xj_tabsort_con">
+                    <div class="xj_tabsort_title">
+                        <div class="xj_tabsort_title_con">线路价格</div>
+                        <em></em>
+                    </div>
+                    <div class="scenery xj_tabsort_list" >
+                        <div class="scrollbarbox scrollbarbox5">
+                            <div class="describlayer describlayer5">
+                                <div class="describ describ5" >
+                                    <ul>
+                                        <li><a href="content.html">不限</a></li>
+                                        <li><a href="content.html">500以下</a></li>
+                                        <li><a href="content.html">500-1000</a></li>
+                                        <li><a href="content.html">1000-1500</a></li>
+                                        <li><a href="content.html">1500-2000</a></li>
+                                        <li><a href="content.html">2000-2500</a></li>
+                                        <li><a href="content.html">2500-3000</a></li>
+                                        <li><a href="content.html">3000-3500</a></li>
+                                        <li><a href="content.html">3500-4000</a></li>
+                                        <li><a href="content.html">4000-5000</a></li>
+                                        <li><a href="content.html">5000-10000</a></li>
+                                        <li><a href="content.html">10000以上</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sidebar sidebar5" >
+                                <a class="bar bar5"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="xj_box_con">
+            <ul>
+                <li class="li_h">
+                    <div class="li_img" data-transition="scale"><img src="images/1.jpg" alt=""/></div>
+                    <div class="li_text">
+                        <div class="li_text_title">
+                            <em></em><a href="content.html" target="_blank">罗布人村寨、轮台胡杨林、天山神秘大峡谷、克孜尔千佛洞、博斯腾湖纯玩7日游</a>
+                        </div>
+                        <div class="li_text_con">
+                            喀纳斯玩够两天，它被誉为神的后花园，当您徜徉在喀纳斯湖畔，看尽天堂的颜色。湖面还会随着季节和天气的变化而时时变化颜色，
+                            鸟瞰群山环抱仙境神湖，寻觅湖怪的踪影，领略莫测的变幻、一步一景。魔鬼城是一片奇特的雅丹风蚀地貌，地处风口，四季 多风，每当大风到来，黄沙遮天，
+                            大风在风城里激荡回旋，凄厉呼啸，如同鬼哭狼嚎，令人毛骨悚在阳光入胜。
+                        </div>
+                        <div class="li_text_other">
+                            <span>行程天数：5天</span>
+                            <span>线路价格：<b>￥45654</b></span>
+                            <span class="span_hover">
+                                <i class="been"></i>
+                                <i class="go">去过</i>34534
+                            </span>
+                            <span class="span_hover">
+                                <i class="heart"></i>453
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <em></em><a href="content.html" target="_blank">罗布人村寨、轮台胡杨林、天山神秘大峡谷、克孜尔千佛洞、博斯腾湖纯玩7日游</a>
+                    <span class="li_day">57天</span>
+                    <span class="li_price"><b>￥456546</b></span>
+                    <span class="span_hover li_been">
+                        <i class="been"></i>
+                        <i class="go">去过</i>345
+                    </span>
+                    <span class="span_hover li_heart">
+                        <i class="heart"></i>453
+                    </span>
+                </li>
+                <li>
+                    <em></em><a href="content.html" target="_blank">罗布人村寨、轮台胡杨林、天山神秘大峡谷、克孜尔千佛洞、博斯腾湖纯玩7日游</a>
+                    <span class="li_day">5天</span>
+                    <span class="li_price"><b>￥45654</b></span>
+                    <span class="span_hover li_been">
+                        <i class="been"></i>
+                        <i class="go">去过</i>34534
+                    </span>
+                    <span class="span_hover li_heart">
+                        <i class="heart"></i>453
+                    </span>
+                </li>
+                <li>
+                    <em></em><a href="content.html" target="_blank">罗布人村寨、轮台胡杨林、天山神</a>
+                    <span class="li_day">5天</span>
+                    <span class="li_price"><b>￥45654</b></span>
+                    <span class="span_hover li_been">
+                        <i class="been"></i>
+                        <i class="go">去过</i>34534
+                    </span>
+                    <span class="span_hover li_heart">
+                        <i class="heart"></i>453
+                    </span>
+                </li>
+                <li>
+                    <em></em><a href="content.html" target="_blank">罗布人村寨、轮台胡杨林、天山神秘大峡谷、克孜尔千佛洞、博斯腾湖纯玩7日游</a>
+                    <span class="li_day">5天</span>
+                    <span class="li_price"><b>￥45654</b></span>
+                    <span class="span_hover li_been">
+                        <i class="been"></i>
+                        <i class="go">去过</i>34534
+                    </span>
+                    <span class="span_hover li_heart">
+                        <i class="heart"></i>453
+                    </span>
+                </li>
+                <li>
+                    <em></em><a href="content.html" target="_blank">罗布人村寨、轮台胡杨玩7日游</a>
+                    <span class="li_day">5天</span>
+                    <span class="li_price"><b>￥45654</b></span>
+                    <span class="span_hover li_been">
+                        <i class="been"></i>
+                        <i class="go">去过</i>34534
+                    </span>
+                    <span class="span_hover li_heart">
+                        <i class="heart"></i>453
+                    </span>
+                </li>
+                <li>
+                    <em></em><a href="content.html" target="_blank">罗布人村寨、轮台胡杨林、天山神秘大峡谷、克孜尔千佛洞、博斯腾湖纯玩7日游</a>
+                    <span class="li_day">5天</span>
+                    <span class="li_price"><b>￥45654</b></span>
+                    <span class="span_hover li_been">
+                        <i class="been"></i>
+                        <i class="go">去过</i>34534
+                    </span>
+                    <span class="span_hover li_heart">
+                        <i class="heart"></i>453
+                    </span>
+                </li>
+                <li>
+                    <em></em><a href="content.html" target="_blank">罗布人村寨、轮台胡杨林、天山神秘大峡谷、克孜尔千佛洞、博斯腾湖纯玩7日游</a>
+                    <span class="li_day">5天</span>
+                    <span class="li_price"><b>￥45654</b></span>
+                    <span class="span_hover li_been">
+                        <i class="been"></i>
+                        <i class="go">去过</i>34534
+                    </span>
+                    <span class="span_hover li_heart">
+                        <i class="heart"></i>453
+                    </span>
+                </li>
+                <li>
+                    <em></em><a href="content.html" target="_blank">罗布人村寨、轮台博斯腾湖纯玩7日游</a>
+                    <span class="li_day">5天</span>
+                    <span class="li_price"><b>￥45654</b></span>
+                    <span class="span_hover li_been">
+                        <i class="been"></i>
+                        <i class="go">去过</i>34534
+                    </span>
+                    <span class="span_hover li_heart">
+                        <i class="heart"></i>453
+                    </span>
+                </li>
+                <li>
+                    <em></em><a href="content.html" target="_blank">罗布人村寨、轮台博斯腾湖纯玩7日游</a>
+                    <span class="li_day">5天</span>
+                    <span class="li_price"><b>￥45654</b></span>
+                    <span class="span_hover li_been">
+                        <i class="been"></i>
+                        <i class="go">去过</i>34534
+                    </span>
+                    <span class="span_hover li_heart">
+                        <i class="heart"></i>453
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="fenye xj_fenye">
+            <a href="content.html" class="first_none"></a>
+
+            <a href="content.html" class="current">1</a>
+            <a href="content.html">2</a>
+            <a href="content.html">3</a>
+            <a href="content.html">4</a>
+            <a href="content.html">5</a>
+            <a href="content.html">6</a>
+            <a href="content.html">7</a>
+            <a href="content.html">8</a>
+            <a href="content.html">9</a>
+
+            <a href="content.html" class="last"></a>
+        </div>
+    </div>
+<!--- 旅游线路列表结束 ----->
+    <div class="clear"></div>
+</div>
+
+<!--- 底部版权信息开始 ----->
+<div class="footer">
+    <div class="footer_con">
+        <p>
+            <a href="content.html" target="_blank">关于我们</a> |
+            <a href="content.html" target="_blank">关于我们</a> |
+            <a href="content.html" target="_blank">关于我们</a> |
+            <a href="content.html" target="_blank">关于我们</a> |
+            <a href="content.html" target="_blank">关于我们</a> |
+            <a href="content.html" target="_blank">关于我们</a> |
+            <a href="content.html" target="_blank">关于我们</a>
+        </p>
+        <p>
+            Copy right © 2002-2014 www.tstrip.cn All Rights Reserved
+        </p>
+    </div>
+</div>
+<!--- 底部版权信息结束 ----->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
